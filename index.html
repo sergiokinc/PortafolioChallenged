@@ -32,7 +32,7 @@
         <img class="presentacion__foto" src="assets/profile.png" alt="Foto de perfil">
         <div class="presentacion__contenedor">
             <h2 class="presentacion__titulo">Hola, soy Sergio Alejandro Aguiar Oviedo y estoy en proceso de aprender a construir páginas web</h2>
-            <p class="presentacion__subtitulo">Soy un apasionado por la tecnología con 29 años de experiencia de vida. Actualmente trabajo en el área de soporte técnico de hardware en un call center, pero mi verdadero interés es crecer en el mundo de la programación. Estoy decidido a aprender más para convertirme en desarrollador, centrándome en el desarrollo web front-end para poder plasmar mi imaginación en proyectos que impacten a otros. ¡Estoy listo para nuevos retos!</p>
+            <p class="presentacion__subtitulo">Soy un apasionado de la tecnología de 29 años. Actualmente, trabajo en soporte técnico de hardware en un call center, pero mi interés está en crecer en programación. Estoy decidido a aprender para convertirme en desarrollador front-end y plasmar mi imaginación en proyectos impactantes. ¡Listo para nuevos retos!</p>
             <ul class="redes">
                 <li class="redes__img"><a href="https://github.com/sergiokinc">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
             </ul>
@@ -42,7 +42,11 @@
     <!-- Sección sobre mí -->
     <section class="sobre-mi" id="sobre-mi">
         <h2 class="sobre-mi__titulo">Sobre mí</h2>
-        <p class="sobre-mi__texto">Soy Sergio, un aprendiz entusiasta de la programación. Actualmente trabajo en un call center ofreciendo soporte técnico en temas de hardware, pero mi meta es expandir mis conocimientos en desarrollo web, especializándome en front-end. Aunque recién comienzo, estoy comprometido en aprender HTML y otras tecnologías para crear páginas web dinámicas y atractivas. Ademas de ello me encanta la enseñanza y este seria una gran posibilida de iniciar un mundo interesante de enseñanza, hay un sin fin de problemas a que se le podra dar solucion.
+        <p class="sobre-mi__texto">Soy Sergio, un aprendiz entusiasta de la programación en Alura. Nací en Bogotá, la capital de Colombia, donde crecí rodeado de tecnología y curiosidad por aprender.</p>
+        <p>Actualmente resido en Barranquilla, una ciudad que me ha acogido y donde continúo mi desarrollo personal y profesional. Trabajo en un call center, ofreciendo soporte técnico en temas de hardware, lo que me ha brindado una sólida base en el área tecnológica.</p>
+        <p>Sin embargo, mi verdadera pasión radica en el desarrollo web. Estoy decidido a expandir mis conocimientos, especialmente en front-end, ya que me encanta plasmar mi creatividad en proyectos que impacten a otros. Aspiro a combinar mi amor por la tecnología con mi deseo de crear soluciones innovadoras y atractivas.</p>
+        <p>Fuera del ámbito laboral, disfruto de tocar el bajo y escuchar música, lo que me ayuda a desconectar y alimentar mi inspiración. Estoy emocionado por el futuro y por las oportunidades que se presenten en mi camino hacia el desarrollo web.</p>
+        
         </p>
     
     </section>
@@ -87,19 +91,30 @@
         <div class="proyectos__contenedor">
             <h3 class="proyectos__nombre">Desarrollo Front-end</h3>
             <p class="proyectos__descripcion">Estoy trabajando para desarrollar habilidades en front-end, con el objetivo de crear experiencias visuales impactantes que permitan que mi creatividad se despliegue en la web.</p>
+            <h3 class="proyectos__nombre">Otras experiencias.</h3>
+
+            <p>Auxiliar contable y algunos oficios de oficina, tambien tengo conocimiento en excel basico y manipulacion de equipos de computacion.
+            </p>
+            <h3 class="proyectos__nombre">Idiomas.</h3>
+            <p>Español Nativo</p> <p>Ingles Basico/intermedio</p>
         </div>
     </section>
 
     <!-- Sección de Contacto -->
     <section class="contacto" id="contacto">
         <h2 class="contacto__titulo">Contacto</h2>
-        <form class="contacto__formulario">
-            <input class="contacto__campo" type="text" placeholder="Nombre">
-            <input class="contacto__campo" type="email" placeholder="Correo Electrónico" value="sergioag1994@hotmail.com">
-            <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
+        <form class="contacto__formulario" id="contactoForm">
+            <input class="contacto__campo" type="text" placeholder="Nombre" id="nombre" required>
+            <input class="contacto__campo" type="email" placeholder="Correo Electrónico" value="sergioag1994@hotmail.com" id="correo" required>
+            <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje" id="mensaje" required></textarea>
             <button class="contacto__boton" type="submit">Enviar</button>
         </form>
     </section>
+    
 </body>
+
+<footer class="footer">
+    Página realizada por <a href="https://github.com/sergiokinc" target="_blank">Sergio Aguiar</a>
+</footer>
 <script src="script.js"></script>
 </html>
