@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Mi Portafolio</title>
+</head>
+
+<body>
+    <!-- Menú -->
+    <header class="cabecera">
+        <img class="cabecera__logo" src="assets/vector.png" alt="Logo">
+        <h1 class="cabecera__titulo">Sergio Alejandro Aguiar Oviedo</h1>
+        <nav class="navegacion">
+            <ul class="navegacion__lista">
+                <li class="navegacion__elemento"><a href="#sobre-mi">Sobre mí</a></li>
+                <li class="navegacion__elemento"><a href="#habilidades">Habilidades</a></li>
+                <li class="navegacion__elemento"><a href="#aficiones">Aficiones</a></li>
+                <li class="navegacion__elemento"><a href="#proyectos">Proyectos</a></li>
+                <li class="navegacion__elemento"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Presentación -->
+    <section class="presentacion">
+        <img class="presentacion__foto" src="assets/profile.png" alt="Foto de perfil">
+        <div class="presentacion__contenedor">
+            <h2 class="presentacion__titulo">Hola, soy Sergio Alejandro Aguiar Oviedo y estoy en proceso de aprender a construir páginas web</h2>
+            <p class="presentacion__subtitulo">Soy un apasionado por la tecnología con 29 años de experiencia de vida. Actualmente trabajo en el área de soporte técnico de hardware en un call center, pero mi verdadero interés es crecer en el mundo de la programación. Estoy decidido a aprender más para convertirme en desarrollador, centrándome en el desarrollo web front-end para poder plasmar mi imaginación en proyectos que impacten a otros. ¡Estoy listo para nuevos retos!</p>
+            <ul class="redes">
+                <li class="redes__img"><a href="https://github.com/sergiokinc">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección sobre mí -->
+    <section class="sobre-mi" id="sobre-mi">
+        <h2 class="sobre-mi__titulo">Sobre mí</h2>
+        <p class="sobre-mi__texto">Soy Sergio, un aprendiz entusiasta de la programación. Actualmente trabajo en un call center ofreciendo soporte técnico en temas de hardware, pero mi meta es expandir mis conocimientos en desarrollo web, especializándome en front-end. Aunque recién comienzo, estoy comprometido en aprender HTML y otras tecnologías para crear páginas web dinámicas y atractivas. Ademas de ello me encanta la enseñanza y este seria una gran posibilida de iniciar un mundo interesante de enseñanza, hay un sin fin de problemas a que se le podra dar solucion.
+        </p>
+    
+    </section>
+
+    <!-- Sección de Habilidades -->
+    <section class="habilidades" id="habilidades">
+        <h2 class="habilidades__titulo">Habilidades</h2>
+        <ul class="habilidades__lista">
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="./assets/htlm.png" alt="HTML">
+                <p class="habilidades__nombre">HTML</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sección de Aficiones -->
+    <section class="aficiones" id="aficiones">
+        <h2 class="aficiones__titulo">Aficiones</h2>
+        <ul class="aficiones__lista">
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="assets/guitar_icon.png" alt="Tocar bajo">
+                <p class="aficiones__nombre">Tocar bajo</p>
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="assets/headphones_icon.png" alt="Escuchar música">
+                <p class="aficiones__nombre">Escuchar música</p>
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="assets/tv_icon.png" alt="Jugar en el PC">
+                <p class="aficiones__nombre">Jugar en el PC</p>
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="/assets/tv_icon.png">
+                <p class="aficiones__nombre">Ver Series</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section class="proyectos" id="proyectos">
+        <h2 class="proyectos__titulo">Proyectos</h2>
+        <div class="proyectos__contenedor">
+            <h3 class="proyectos__nombre">Desarrollo Front-end</h3>
+            <p class="proyectos__descripcion">Estoy trabajando para desarrollar habilidades en front-end, con el objetivo de crear experiencias visuales impactantes que permitan que mi creatividad se despliegue en la web.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contacto" id="contacto">
+        <h2 class="contacto__titulo">Contacto</h2>
+        <form class="contacto__formulario">
+            <input class="contacto__campo" type="text" placeholder="Nombre">
+            <input class="contacto__campo" type="email" placeholder="Correo Electrónico" value="sergioag1994@hotmail.com">
+            <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
+            <button class="contacto__boton" type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>

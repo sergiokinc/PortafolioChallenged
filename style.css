@@ -1,0 +1,166 @@
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+    --color-de-texto: #333333;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-de-fondo-menu);
+}
+
+.cabecera__logo {
+    max-width: 80px;
+    /* Ajuste para pantallas pequeñas */
+}
+
+.cabecera__titulo {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.navegacion__lista {
+    display: none;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+/* ------------------------------ Sección de Aficiones ------------------------------ */
+.aficiones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas grandes */
+    gap: 20px;
+    justify-items: center;
+    padding: 40px;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+
+.aficiones__item {
+    text-align: center;
+    font-size: 18px;
+    color: var(--color-de-texto);
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.aficiones__item:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar sobre cada afición */
+}
+
+/* ------------------------------ Sección de Proyectos ------------------------------*/
+
+/* ------------------------------ Sección de Contacto -------------------------------*/
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+}
+
+/* ------------------------------ Responsividad para la Sección de Aficiones ------------------------------- */
+
+/* Móvil */
+@media (max-width: 600px) {
+    .aficiones {
+        grid-template-columns: repeat(1, 1fr); /* Aficiones en una sola columna en móvil */
+    }
+
+    .aficiones__item {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1023px) {
+    .aficiones {
+        grid-template-columns: repeat(2, 1fr); /* Dos aficiones por fila en tablet */
+    }
+
+    .aficiones__item {
+        font-size: 18px;
+        padding: 20px;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    .aficiones {
+        grid-template-columns: repeat(4, 1fr); /* 4 aficiones por fila en pantallas grandes */
+    }
+
+    .aficiones__item {
+        font-size: 20px;
+        padding: 25px;
+    }
+}
